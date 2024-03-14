@@ -25,7 +25,10 @@ function App() {
                 setFilteredMonsters(filtered);
             }} />
           {filteredMonsters.map((monster, index) => (
-              <div key={index}><h1>{monster.name}</h1></div>
+              <div key={index}>
+                <h1>{monster.name}</h1>
+                <h4>{monster.email}</h4>  
+              </div>
           ))}
       </div>
   );
